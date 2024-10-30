@@ -4,6 +4,11 @@ import {Component} from "react";
 
 import background from '../../images/background/Background.jpeg'
 import circle from '../../images/icon/Circle.svg'
+import instagram from '../../images/icon/Instagram.svg'
+import github from '../../images/icon/GitHub.svg'
+import facebook from '../../images/icon/Facebook.svg'
+
+
 const IntroducePage = styled.section`
     background: url(${background}) center center no-repeat ;
     min-height: 800px;
@@ -11,6 +16,58 @@ const IntroducePage = styled.section`
     width: 60%;
     margin: 0 auto;
     padding-top: 206px;
+`, HamburgerWrapper = styled.div`
+    width: 36px;
+    height: 21px;
+    margin-left: 95%;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+`, Hamburger = styled.div`
+    width: 36px;
+    height: 3px;
+    background: rgb(21, 24, 18);
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        top: -8px;
+        left: 6px;
+        background: rgb(21, 24, 18);
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        top: 8px;
+        left: 6px;
+        background: rgb(21, 24, 18);
+    }
+`, WrapperSocial = styled.div`
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    transform: rotate(-90.00deg);
+    top: 360px;
+    left: -110px;
+    position: absolute;
+`, SocialText = styled.h2`
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+`, SocialLine = styled.div`
+    width: 75px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+`, SocialIcon = styled.div`
+    display: flex;
+    gap: 15px;
+    img{
+        transform: rotate(90.00deg);
+
+    }
 `, Name = styled.h2`
     font-size: 16px;
     position: relative;
@@ -30,21 +87,38 @@ const IntroducePage = styled.section`
     font-size: 48px;
     margin-top: 9px;
     max-width: 532px;;
+    margin-bottom: 15px;
 `, Button = styled.button`
     width: 135px;
     height: 45px;
-    background: rgb(255, 165, 1);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    border: none;
-    margin-top: 15px;
-    cursor: pointer;
-    margin-right: 44px;
+    font-size: 14px;
+`, LinkMe = styled.a`
+    margin-left: 15px;
+    font-size: 14px;
 `
 
 export default class Introduce extends Component {
     render() {
         return(
             <IntroducePage>
+                <HamburgerWrapper>
+                    <Hamburger></Hamburger>
+                </HamburgerWrapper>
+                <WrapperSocial>
+                    <SocialText>Социальные сети</SocialText>
+                    <SocialLine></SocialLine>
+                    <SocialIcon>
+                        <a href="">
+                            <img src={github} alt=""/>
+                        </a>
+                        <a href="">
+                        <img src={instagram} alt=""/>
+                        </a>
+                        <a href="">
+                        <img src={facebook} alt=""/>
+                        </a>
+                    </SocialIcon>
+                </WrapperSocial>
                 <Container>
                     <Name>
                         Меня зовут Александра Смит
@@ -56,7 +130,7 @@ export default class Introduce extends Component {
                         <a href="#"><Button>
                             Портфолио
                         </Button></a>
-                    <a href=""> Про меня</a>
+                    <LinkMe href=""> Про меня</LinkMe>
                 </Container>
 
             </IntroducePage>
