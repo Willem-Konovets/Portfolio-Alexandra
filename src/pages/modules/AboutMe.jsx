@@ -9,7 +9,7 @@ import mobile from '../../images/icon/Mobile.svg'
 import photo from '../../images/img/PhotoAlexandra.jpeg'
 
 
-const AboutMePage = styled.div`
+const AboutMeSection = styled.div`
     min-height: 600px;
     margin-top: 120px;
     display: grid;
@@ -84,7 +84,7 @@ const AboutMePage = styled.div`
 export default class AboutMe extends Component {
     render() {
         return(
-            <AboutMePage>
+            <AboutMeSection>
                 <img src={photo} alt=""/>
                 <div>
                     <Heading>Про меня</Heading>
@@ -117,7 +117,7 @@ export default class AboutMe extends Component {
                     </SkillsGrid>
                 </div>
 
-            </AboutMePage>
+            </AboutMeSection>
         )
     }
 

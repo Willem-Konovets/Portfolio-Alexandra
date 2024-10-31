@@ -9,7 +9,7 @@ import github from '../../images/icon/GitHub.svg'
 import facebook from '../../images/icon/Facebook.svg'
 
 
-const IntroducePage = styled.section`
+const IntroduceSection = styled.section`
     background: url(${background}) center center no-repeat ;
     min-height: 800px;
 `, Container = styled.div`
@@ -100,7 +100,7 @@ const IntroducePage = styled.section`
 export default class Introduce extends Component {
     render() {
         return(
-            <IntroducePage>
+            <IntroduceSection>
                 <HamburgerWrapper>
                     <Hamburger></Hamburger>
                 </HamburgerWrapper>
@@ -133,7 +133,7 @@ export default class Introduce extends Component {
                     <LinkMe href=""> Про меня</LinkMe>
                 </Container>
 
-            </IntroducePage>
+            </IntroduceSection>
         )
     }
 

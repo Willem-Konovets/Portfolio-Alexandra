@@ -3,8 +3,8 @@ import {Component} from "react";
 import styled, {createGlobalStyle} from "styled-components";
 
 import Introduce from './modules/Introduce';
-import About from './modules/AboutMe';
 import AboutMe from "./modules/AboutMe";
+import Experience from "./modules/Experience";
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -39,6 +39,7 @@ export default  class IndexPage extends Component {
                 <Introduce/>
             <Container>
                 <AboutMe/>
+                <Experience/>
             </Container>
             </>
 
