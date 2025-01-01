@@ -5,6 +5,7 @@ import styled, {createGlobalStyle} from "styled-components";
 import Introduce from './modules/Introduce';
 import AboutMe from "./modules/AboutMe";
 import Experience from "./modules/Experience";
+import Skills from "./modules/Skills";
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -40,6 +41,7 @@ export default  class IndexPage extends Component {
             <Container>
                 <AboutMe/>
                 <Experience/>
+                <Skills/>
             </Container>
             </>
 

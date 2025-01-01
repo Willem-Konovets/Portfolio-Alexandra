@@ -10,7 +10,7 @@ import courses from '../../images/icon/Courses.svg'
 
 
 const ExperienceSection = styled.section`
-    min-height: 559px;
+    height: 559px;
     margin-top: 120px;
     padding-left: 133px;
     padding-right: 89px;
@@ -41,7 +41,6 @@ const ExperienceSection = styled.section`
 `, ExperienceGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     gap: 235px;
 `, ExperienceWrapper = styled.div`
     display: flex;
