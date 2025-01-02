@@ -12,7 +12,7 @@ import nodeJs from '../../images/icon/Node.js.svg'
 
 
 const SkillSection = styled.div`
-    height: 1141px;
+    height: 1200px;
     margin-top: 120px;
 `,Heading = styled.h2`
     font-size: 16px;
