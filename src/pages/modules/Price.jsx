@@ -21,8 +21,8 @@ const PriceSection = styled.section`
     }
 `, Line = styled.div`
     width: 60px;
-    margin: 15px auto 0;
-    border: 2px solid rgb(255, 165, 1);
+    margin: 25px auto 0;
+    border: 1.5px solid rgb(255, 165, 1);
 `, GridWrapper = styled.div`
     margin: 111px 0 0 150px;
     display: grid;

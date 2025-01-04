@@ -21,7 +21,8 @@ const ExperienceSection = styled.section`
     position: relative;
     &:before{
         content: '';
-        background: url(${circle}) center center no-repeat;
+        background: rgb(255, 165, 1);
+        border-radius: 100%;
         width: 36px;
         height: 36px;
         display: inline-block; /* Или block, если вам нужно, чтобы элемент занимал всю ширину */
@@ -34,7 +35,7 @@ const ExperienceSection = styled.section`
     font-size: 36px;
     text-align: center;
 `, Line = styled.div`
-    border: 2px solid rgb(255, 165, 1);
+    border: 1.5px solid rgb(255, 165, 1);
     width: 60px;
     height: 0;
     margin: 25px auto 0;

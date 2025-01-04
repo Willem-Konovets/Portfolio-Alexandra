@@ -41,9 +41,10 @@ const SkillSection = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 300px);
     grid-template-rows: repeat(2, 300px);
-    gap: 30px;
+    column-gap: 30px;
+    row-gap: -3px;
 `, CardTool = styled.div`
-    width: 270px;
+    width: 285px;
     padding-left: 30px;
     border: 1px solid rgb(0, 0, 0);
     max-height: 270px;
@@ -59,7 +60,7 @@ const SkillSection = styled.div`
     margin-top: 15px;
     font-size: 12px;
     line-height: 18px;
-    width: 211px;
+    width: 250px;
 `, WrapperSkills = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 375px);

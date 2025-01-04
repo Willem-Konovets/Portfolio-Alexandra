@@ -53,7 +53,7 @@ const IntroduceSection = styled.section`
     transform: rotate(-90.00deg);
     top: 360px;
     left: -110px;
-    position: absolute;
+    position: fixed;
 `, SocialText = styled.h2`
     color: rgb(0, 0, 0);
     font-size: 18px;

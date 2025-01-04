@@ -55,8 +55,9 @@ const AboutMeSection = styled.div`
     z-index: 1;
     &:before{
         content: '';
-        background: url(${circle}) center center no-repeat;
         width: 36px;
+        background: rgb(255, 165, 1);
+        border-radius: 100%;
         height: 36px;
         display: inline-block; /* Или block, если вам нужно, чтобы элемент занимал всю ширину */
         position: absolute; /* Установите позицию, если это необходимо */
