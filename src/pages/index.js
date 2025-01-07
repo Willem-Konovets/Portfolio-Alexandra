@@ -8,6 +8,7 @@ import Experience from "./modules/Experience";
 import Skills from "./modules/Skills";
 import MyWorks from "./modules/MyWorks";
 import PriceSection from "./modules/Price";
+import Contacts from "./modules/Contacts";
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -46,6 +47,7 @@ export default  class IndexPage extends Component {
                 <Skills/>
                 <MyWorks/>
                 <PriceSection/>
+                <Contacts/>
             </Container>
             </>
 

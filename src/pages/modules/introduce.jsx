@@ -52,7 +52,7 @@ const IntroduceSection = styled.section`
     align-items: center;
     transform: rotate(-90.00deg);
     top: 360px;
-    left: -110px;
+    left: -150px;
     position: fixed;
 `, SocialText = styled.h2`
     color: rgb(0, 0, 0);
